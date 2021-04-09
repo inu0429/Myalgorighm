@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
+//코드 만든이 인천대학교 정보통신공학과 서성부.
+//https://github.com/inu0429/java_Myalgorighm.git
 
 public class Knapsack {
 		static int w;// 클래스 맴버들은 0으로 자동초기화.
