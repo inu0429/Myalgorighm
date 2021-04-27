@@ -57,11 +57,14 @@
     
     
     Combine 함수는 전체적인 슈트라센함수 코드를 본 후 같이 설명드리겠습니다.
-![슈트라센 구현](https://user-images.githubusercontent.com/80373000/116204302-9e142800-a777-11eb-8eda-3d0a2beef3ff.JPG)
-
-
+    
+    앞서 코드를 보기 전 슈트라센의 구조는 이렇습니다.
+    ![슈트라센](https://user-images.githubusercontent.com/80373000/116205565-d9fbbd00-a778-11eb-999b-6f8d46a524bc.JPG)
+    
+    
+## 슈트라센 구현 
   슈트라센 구현부에서는 앞서 말씀드렸던 divide 함수와 각각 등분한 값을 이용해 만든 M1~M7 그리고 combine 함수를 이용해서 행렬곱셈과정을 실행합니다.  
+  ![슈트라센 구현](https://user-images.githubusercontent.com/80373000/116204302-9e142800-a777-11eb-8eda-3d0a2beef3ff.JPG)
   
-  
-  
+
     
