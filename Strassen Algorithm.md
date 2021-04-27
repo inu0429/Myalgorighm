@@ -93,11 +93,11 @@
 ## 예제로 보는 성능
 
 ### 반복문을 3번쓴 즉 O(n**3) 형태 일때 걸리는 시간
-![128](https://user-images.githubusercontent.com/80373000/116236997-aaf64300-a79a-11eb-9ed3-b68cc5e1b252.JPG)
+![128](https://user-images.githubusercontent.com/80373000/116240457-cf541e80-a79e-11eb-9bb8-8f73f8732af3.JPG)
 
 
 ### 슈트라센을 이용해서 풀었을 때 걸리는 시간.
-![128-1](https://user-images.githubusercontent.com/80373000/116237003-ab8ed980-a79a-11eb-97b4-bae4e88fc101.JPG)
+![128-1](https://user-images.githubusercontent.com/80373000/116240459-cfecb500-a79e-11eb-9e44-69cff9b44677.JPG)
 
 
 입력 값을 128넣어주었는데 성능차이가 엄청나기 시작합니다. 숫자가 커지면 커질수록 더 성능차이가 날 것입니다.
