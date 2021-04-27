@@ -31,6 +31,10 @@
   이런식으로 말이죠.
   
   
+  ![홀수 값](https://user-images.githubusercontent.com/80373000/116214627-d91b5900-a781-11eb-92b1-3bb6b2f06f2a.JPG)
+
+  
+  
   그리고 행렬의 값들은 임의로 받기 위해서 `random 유틸 클래스`를 이용했습니다.
   
   
