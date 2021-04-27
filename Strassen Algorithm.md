@@ -19,7 +19,7 @@
    선언부에서 while문을 넣은 이유는 슈트라센 구현에서 4등분으로 나눌 것이기 때문에 `2**n` 형태의 행렬이 필요합니다. 그래서 입력 값 n을 임의의 `2**n` 형태의 행렬을 만들 수 있도록 조절하고      `real_n` 이라는 변수를 통해서 출력할 때는 내가 원하는 값들만 출력할 수 있게 통제 하였습니다.
    
    
-   ![선언부](https://user-images.githubusercontent.com/80373000/116236140-a8dfb480-a799-11eb-9965-a55d6bcac0c6.JPG)
+   ![선언부](https://user-images.githubusercontent.com/80373000/116240991-6b7e2580-a79f-11eb-81f1-4cbe9b946c1d.JPG)
     
 
   그리고 행렬의 값들은 임의로 받기 위해서 `random 유틸 클래스`를 이용했습니다.
