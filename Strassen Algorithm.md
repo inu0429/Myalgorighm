@@ -81,7 +81,10 @@
   * 메인함수 구현부  
     
     새로운 `C_matrix` 에 리턴받은 이차원배열(행렬) C의 주소를 넘겨받고 출력하면 원하는 행렬곱셈 값이 나오게 됩니다.
-    ![메인함수](https://user-images.githubusercontent.com/80373000/116206471-cbfa6c00-a779-11eb-97f5-96273405de08.JPG)
+    
+    
+    성능 측정을 위해 `System.currentTimeMillis();` 를 사용하였습니다.
+    ![메인함ㅅ](https://user-images.githubusercontent.com/80373000/116238129-f52bf400-a79b-11eb-8a80-90c5493d8e46.JPG)
 
 
 ## 예제로 보는 성능
