@@ -23,7 +23,6 @@ public class InsertionSort extends  AwesomeSort{
 ```
 시간 복잡도는 `n*n= n제곱` 입니다.
 
-
 * main 함수 실행결과입니다.
     ![삽입정렬 시간](https://user-images.githubusercontent.com/80373000/116873978-834c2280-ac53-11eb-887c-aa7b69665b59.JPG)
 *** 
