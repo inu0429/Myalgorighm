@@ -5,9 +5,9 @@
 # Bubble Sort
 
 * 오름차순 버블정렬입니다.
-```
-import java.util.ArrayList;
 
+버블정렬은 원소를 하나씩 비교할 수 있어서 정밀하게 비교가능하나 시간이 걸려서 썩 좋은 방법은 아닙니다.
+```
 public class BubbleSort extends AwesomeSort {
     @Override
     public int[] sort(int[] p) {
@@ -25,7 +25,6 @@ public class BubbleSort extends AwesomeSort {
     }
 }
 ```
-시간 복잡도는 `n*n= n제곱` 입니다.
 
 * main 함수 실행결과입니다.
 
@@ -34,6 +33,10 @@ public class BubbleSort extends AwesomeSort {
 # Insertion Sort
 
 * 역순출력(내림차순) 삽입정렬입니다.
+
+버블정렬의 단점을 없엔 새로운 정렬이라고 할 수 있습니다. 
+
+이미 정렬된 부분은 건너뛰는 방식을 선택하기 때문에 버블정렬보다 상대적으로 시간절약이 가능합니다.
 ```
 public class InsertionSort extends  AwesomeSort{
     @Override
@@ -50,7 +53,6 @@ public class InsertionSort extends  AwesomeSort{
     }
 }
 ```
-시간 복잡도는 `n*n= n제곱` 입니다.
 
 * main 함수 실행결과입니다.
 
@@ -60,6 +62,12 @@ public class InsertionSort extends  AwesomeSort{
 # Selection Sort
 
 * 역순출력(내림차순) 선택정렬입니다.
+
+배열에서 최솟값이나 최댓값을 찾아서 맨 앞에 있는 값과 교체하는 방식을 쓰는 정렬입니다. 
+
+마찬가지로 값을 하나씩 비교하면서 교체하기 때문에 정밀한 정렬이 가능합니다.
+
+오름차순 내림차순 정렬 할때는 정말 좋은 정렬이라고 할 수 있으나 정렬된 배열에 특정 값을 추가해서 정렬 할때는 비효율 적인 것 같습니다.
 
 ```
 public class SelectionSort extends AwesomeSort{
@@ -82,13 +90,10 @@ public class SelectionSort extends AwesomeSort{
     }
 }
 ```
-시간 복잡도는 `n*n= n제곱` 입니다.
 
 * main 함수 실행결과입니다.
-
     ![선택정렬 시간](https://user-images.githubusercontent.com/80373000/116873980-834c2280-ac53-11eb-8b55-fc4acd0d01ab.JPG)
 ***
-
 # Shell Sort
 
 * 역순출력(내림차순) 셸 정렬입니다.
@@ -112,20 +117,18 @@ public class ShellSort extends  AwesomeSort{
     }
 }
 ```
-시간 복잡도는 `n*n= n제곱` 입니다.
 
 * main 함수 실행결과입니다.
-
     ![셸 정렬시간](https://user-images.githubusercontent.com/80373000/116873975-821af580-ac53-11eb-8afd-b99fea2fc5b3.JPG)
 ***
 
-# 크기가 커졌을 때 셸 정렬과 선택,삽입 정렬 차이.
+# 크기가 커졌을 때 셸 정렬과 삽입 정렬 차이.
 
 n값이 작을 때는 별로 티가 안나서 500까지 올려주었는데 시간 차이가 조금씩 나기 시작했습니다. 
 
 근소하게 셸 정렬이 빠른 것을 볼 수 있습니다.
 
-* 삽입, 선택 500크기 시간
+* 삽입 500크기 시간
 
     ![삽입 500](https://user-images.githubusercontent.com/80373000/116873977-82b38c00-ac53-11eb-94b1-cc09cf7d8add.JPG)
 
