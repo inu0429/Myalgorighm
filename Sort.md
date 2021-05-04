@@ -1,10 +1,39 @@
 # 수업시간에 다룬 클래스들로 정의.
 
 수업시간에 다룬 인터페이스와 클래스들로 그대로 구현했습니다.
+***
+# Bubble Sort
+
+* 오름차순 버블정렬입니다.
+```
+import java.util.ArrayList;
+
+public class BubbleSort extends AwesomeSort {
+    @Override
+    public int[] sort(int[] p) {
+        int[] x = p.clone();
+        for (int i = 0; i < x.length; i++) {
+            for (int j = 1; j < x.length; j++) {
+                if (x[j - 1] > x[j]) {
+                    int temp = x[j - 1];
+                    x[j - 1] = x[j];
+                    x[j] = temp;
+                }
+            }
+        }
+        return x;
+    }
+}
+```
+시간 복잡도는 `n*n= n제곱` 입니다.
+
+* main 함수 실행결과입니다.
+
+![버블정렬 메인](https://user-images.githubusercontent.com/80373000/116962458-f8b20480-ace0-11eb-87b2-50f8519727b0.JPG)
 
 # Insertion Sort
 
-* 역순출력 삽입정렬입니다.
+* 역순출력(내림차순) 삽입정렬입니다.
 ```
 public class InsertionSort extends  AwesomeSort{
     @Override
@@ -23,15 +52,14 @@ public class InsertionSort extends  AwesomeSort{
 ```
 시간 복잡도는 `n*n= n제곱` 입니다.
 
+
 * main 함수 실행결과입니다.
-
-
     ![삽입정렬 시간](https://user-images.githubusercontent.com/80373000/116873978-834c2280-ac53-11eb-887c-aa7b69665b59.JPG)
 *** 
 
 # Selection Sort
 
-* 역순출력 선택 정렬입니다.
+* 역순출력(내림차순) 선택정렬입니다.
 
 ```
 public class SelectionSort extends AwesomeSort{
@@ -57,13 +85,11 @@ public class SelectionSort extends AwesomeSort{
 시간 복잡도는 `n*n= n제곱` 입니다.
 
 * main 함수 실행결과입니다.
-
-
     ![선택정렬 시간](https://user-images.githubusercontent.com/80373000/116873980-834c2280-ac53-11eb-8b55-fc4acd0d01ab.JPG)
 ***
 # Shell Sort
 
-* 역순출력 셸 정렬입니다.
+* 역순출력(내림차순) 셸 정렬입니다.
 ```
 public class ShellSort extends  AwesomeSort{
     @Override
@@ -87,8 +113,6 @@ public class ShellSort extends  AwesomeSort{
 시간 복잡도는 `n*n= n제곱` 입니다.
 
 * main 함수 실행결과입니다.
-
-
     ![셸 정렬시간](https://user-images.githubusercontent.com/80373000/116873975-821af580-ac53-11eb-8afd-b99fea2fc5b3.JPG)
 ***
 
