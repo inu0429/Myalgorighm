@@ -85,8 +85,10 @@ public class SelectionSort extends AwesomeSort{
 시간 복잡도는 `n*n= n제곱` 입니다.
 
 * main 함수 실행결과입니다.
+
     ![선택정렬 시간](https://user-images.githubusercontent.com/80373000/116873980-834c2280-ac53-11eb-8b55-fc4acd0d01ab.JPG)
 ***
+
 # Shell Sort
 
 * 역순출력(내림차순) 셸 정렬입니다.
@@ -113,6 +115,7 @@ public class ShellSort extends  AwesomeSort{
 시간 복잡도는 `n*n= n제곱` 입니다.
 
 * main 함수 실행결과입니다.
+
     ![셸 정렬시간](https://user-images.githubusercontent.com/80373000/116873975-821af580-ac53-11eb-8afd-b99fea2fc5b3.JPG)
 ***
 
