@@ -97,9 +97,9 @@ public class SelectionSort extends AwesomeSort{
 ***
 # Shell Sort
 
-삽입정렬을 업그레이드 한 정렬이라고 볼 수 있습니다. 분할 정복개념이 들어간 정렬입니다.
-
 * 역순출력(내림차순) 셸 정렬입니다.
+
+삽입정렬을 업그레이드 한 정렬이라고 볼 수 있습니다. 분할 정복개념이 들어간 정렬입니다.
 ```
 public class ShellSort extends  AwesomeSort{
     @Override
