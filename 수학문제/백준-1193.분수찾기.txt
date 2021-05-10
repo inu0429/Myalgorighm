@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        find(n);
+
+    }//main
+
+    static void find(int n) {
+        int k = 1;
+        int result;
+        if (n == 1) {
+            System.out.println(n + "/" + n);
+        } else {
+            for (int i = 2; ; i++) {
+                if (k >= n) {
+                    result = i - 1;
+                    break;
+                }
+                k += i;
+            }
+            int a = Math.abs(k - n);
+            if(result%2 ==0){
+                System.out.println((result - a) + "/" +(1 +a));
+            }
+            else{
+                System.out.println((1 + a) + "/" + (result - a));
+            }
+        }
+    }
+}
