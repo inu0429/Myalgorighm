@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        ArrayList<String> arrayList  = new ArrayList<>(n);
+        for(int i=0;i<n;i++){
+            arrayList.add(scanner.next());
+        }
+        Set<String> set = new HashSet<>(arrayList);
+        ArrayList<String> arrayList1= new ArrayList<>(set);
+        Collections.sort(arrayList1,new StringLength());
+
+        for(String i:arrayList1)
+            System.out.println(i);
+    }//main
+}
+
+class StringLength implements Comparator<String>{
+    @Override
+    public int compare(String o1, String o2) {
+        int a= o1.length()-o2.length();
+        if(a==0){
+            for(int i=0;i<o1.length();i++){
+                int b=o1.charAt(i)-o2.charAt(i);
+                if(!(b==0))
+                    return b;
+            }
+        }
+        return a;
+    }
+}
