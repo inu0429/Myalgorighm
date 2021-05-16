@@ -1,0 +1,84 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int n= scanner.nextInt();
+        int m= scanner.nextInt();
+        int start= scanner.nextInt();
+        DfsGraph dfsGraph = new DfsGraph(n);
+        BfsGraph bfsGraph = new BfsGraph(n);
+        for(int i=0;i<m;i++){
+           int a= scanner.nextInt();
+           int b= scanner.nextInt();
+           dfsGraph.makegraph(a,b);
+           bfsGraph.makegraph(a,b);
+        }
+        dfsGraph.dfs(start);
+        System.out.println();
+        bfsGraph.bfs(start);
+    }
+}
+
+class DfsGraph{
+    int n;
+    int[][] graph;
+    boolean[] v;
+
+    DfsGraph(int n){
+        this.n=n;
+        graph= new int[n+1][n+1];
+        v=new boolean[n+1];
+    }
+    void makegraph(int a, int b){
+        graph[a][b]=graph[b][a]=1;
+    }
+
+    void dfs(int start){
+        v[start]=true;
+        System.out.print(start+" ");
+
+        for(int i=1;i<graph[start].length;i++){
+            if(graph[start][i]==1 && v[i]==false){
+                dfs(i);
+            }
+        }
+    }
+}
+
+
+class BfsGraph{
+    int n;
+    int[][] graph;
+    boolean[] v;
+
+    BfsGraph(int n){
+        this.n=n;
+        graph= new int[n+1][n+1];
+        v=new boolean[n+1];
+    }
+
+    void makegraph(int a, int b){
+        graph[a][b]=graph[b][a]=1;
+    }
+
+    void bfs(int start){
+        Queue<Integer> queue= new <Integer>LinkedList();
+        v[start]=true;
+        queue.offer(start);
+
+        while(!queue.isEmpty()){
+            int a = queue.poll();
+            System.out.print(a +" ");
+
+            for(int i=1;i<graph[a].length;i++){
+                if(graph[a][i]==1 && v[i]==false){
+                    v[i] = true;
+                    queue.offer(i);
+                }
+            }
+        }
+    }
+}
