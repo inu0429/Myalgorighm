@@ -8,7 +8,7 @@
 * 오름차순 버블정렬입니다.
 
 버블정렬은 원소를 하나씩 비교할 수 있어서 정밀하게 비교가능하나 시간이 걸려서 썩 좋은 방법은 아닙니다.
-```
+``` java
 public class BubbleSort extends AwesomeSort {
     @Override
     public int[] sort(int[] p) {
@@ -38,7 +38,7 @@ public class BubbleSort extends AwesomeSort {
 버블정렬의 단점을 없엔 새로운 정렬이라고 할 수 있습니다. 
 
 이미 정렬된 부분은 건너뛰는 방식을 선택하기 때문에 버블정렬보다 상대적으로 시간절약이 가능합니다.
-```
+```java
 public class InsertionSort extends  AwesomeSort{
     @Override
     public int[] sort(int[] p) {
@@ -70,7 +70,7 @@ public class InsertionSort extends  AwesomeSort{
 
 오름차순 내림차순 정렬 할때는 정말 좋은 정렬이라고 할 수 있으나 정렬된 배열에 특정 값을 추가해서 정렬 할때는 비효율 적인 것 같습니다.
 
-```
+```java
 public class SelectionSort extends AwesomeSort{
     @Override
     public int[] sort(int[] p){
@@ -101,7 +101,7 @@ public class SelectionSort extends AwesomeSort{
 * 역순출력(내림차순) 셸 정렬입니다.
 
 삽입정렬을 업그레이드 한 정렬이라고 볼 수 있습니다. 분할 정복개념이 들어간 정렬입니다.
-```
+```java
 public class ShellSort extends  AwesomeSort{
     @Override
     public int[] sort(int[] p) {
