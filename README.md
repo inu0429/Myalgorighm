@@ -61,13 +61,7 @@ public class Main {
 ```
 
 
-* 결과값이 원하는대로 출력하는지 확인하기 위해서 작업시간을 4로 고정한 채로 출력해봤습니다.
-
-
-![4](https://user-images.githubusercontent.com/80373000/118442562-b5668580-b725-11eb-818f-3b094af0bdf3.JPG)
-
-
-* 결과값이 원하는대로 나왔습니다. 알고리즘에는 문제가 없으니 이제 랜덤값을 넣어줘서 값을 확인합니다.
+* Run을 돌렸을 때 결과입니다. 원하는대로 잘 설계된 모습입니다.
 
 
 ![random](https://user-images.githubusercontent.com/80373000/118442331-6d476300-b725-11eb-86c4-9dd9bf1303fe.JPG)
