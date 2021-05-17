@@ -64,7 +64,7 @@ public class Main {
 * Run을 돌렸을 때 결과입니다. 원하는대로 잘 설계된 모습입니다.
 
 
-![random](https://user-images.githubusercontent.com/80373000/118442331-6d476300-b725-11eb-86c4-9dd9bf1303fe.JPG)
+![Run](https://user-images.githubusercontent.com/80373000/118450825-910fa680-b72f-11eb-9297-1a22fa94464a.JPG)
 
 
 # 시간복잡도와 근사비율
