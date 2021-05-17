@@ -87,6 +87,8 @@ O(NM) 으로 나타낼 수 있습니다.
 
 opt=는 최적의해를 가졌을 때 시간이고, opt'=는 근사해를 가졌을 때 시간입니다.
 
+![image](https://user-images.githubusercontent.com/80373000/118451115-ddf37d00-b72f-11eb-8813-a85782cc33db.png)
+
 
 Run을 한번 돌렸을 때(위에 결과 값) 근사값과 근사 비율을 구해봤습니다.
 
