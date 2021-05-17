@@ -9,7 +9,7 @@ Kakao Talk Id:
 # 작업 스케줄링(Job scheduling) 
 
 
-```
+``` java
 public class Main {
     public static void main(String[] args){
         int[] n = {4,8,16};
