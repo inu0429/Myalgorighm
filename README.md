@@ -60,3 +60,15 @@ public class Main {
 
 ![random](https://user-images.githubusercontent.com/80373000/118442331-6d476300-b725-11eb-86c4-9dd9bf1303fe.JPG)
 
+
+# 시간복잡도와 근사비율
+
+
+* 시간복잡도
+
+
+n개의 작업을 배정하고(동시에 n개의 작업에 대한 작업시간도 같이 배정) 그리고 m개의 기계에 대해 시간을 탐색해야 하니
+
+
+O(NM) 으로 나타낼 수 있습니다.
+
