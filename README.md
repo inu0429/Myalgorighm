@@ -52,7 +52,7 @@ public class Main {
 * 결과값이 원하는대로 출력하는지 확인하기 위해서 작업시간을 4로 고정한 채로 출력해봤습니다.
 
 
-![4](https://user-images.githubusercontent.com/80373000/118442328-6caecc80-b725-11eb-875b-7122076a1096.JPG)
+![4](https://user-images.githubusercontent.com/80373000/118442562-b5668580-b725-11eb-818f-3b094af0bdf3.JPG)
 
 
 * 결과값이 원하는대로 나왔습니다. 알고리즘에는 문제가 없으니 이제 랜덤값을 넣어줘서 값을 확인합니다.
