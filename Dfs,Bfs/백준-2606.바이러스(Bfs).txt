@@ -1,0 +1,55 @@
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+
+        Bfs bfs = new Bfs(n);
+        for(int i=0;i<m;i++){
+            int a= scanner.nextInt();
+            int b= scanner.nextInt();
+            bfs.add(a,b);
+        }
+        System.out.println(bfs.Bfs(1));
+    }
+}
+
+
+class Bfs{
+    int[][] number;
+    boolean[] v;
+    LinkedList<Integer> next;
+    int result;
+    // 초기화
+    Bfs(int size){
+        number= new int[size+1][size+1];
+        v= new boolean[size+1];
+        next= new LinkedList<Integer>();
+        result=-1;
+    }
+
+    // 경로 추가
+    void add(int a, int b){
+        number[a][b]=number[b][a]=1;
+    }
+
+    int Bfs(int start){
+        v[start]=true;
+        next.add(start);
+        while(!next.isEmpty()){
+            result+=1;
+            int a= next.poll();
+            for(int i=1;i<number[a].length;i++){
+                if(number[a][i]==1 && v[i]==false) {
+                    v[i] = true;
+                    next.add(i);
+                }
+            }
+        }
+        return result;
+    }
+}
+
