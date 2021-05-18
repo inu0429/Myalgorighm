@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] number= new int[n+1];
+        for(int i=1;i<number.length;i++){
+            number[i]= scanner.nextInt();
+        }
+        Sort sort = new Sort();
+        sort.MergeSort(number,1,n);
+
+        for(int i=1;i<number.length;i++){
+            System.out.print(number[i]+" ");
+        }
+
+
+    }
+}
+
+
+class Sort{
+    void MergeSort(int[] number,int start,int end) {
+        int mid;
+        if(start<end){
+            mid=(start+end)/2;
+            MergeSort(number,start,mid);
+            MergeSort(number,mid+1,end);
+            Merge(number,start,mid,end);
+        }
+    }
+
+    void Merge(int[] number,int start,int mid,int end){
+        int a=start;
+        int b=mid+1;
+        int c=start;
+        int[] temp = new int[number.length];
+
+        while(a<=mid && b<=end){
+            if(number[a]>number[b]){
+                temp[c++]=number[b++];
+            }
+            else{
+                temp[c++]=number[a++];
+            }
+        }
+        while(b<=end){
+            temp[c++]=number[b++];
+        }
+        while(a<=mid){
+            temp[c++]=number[a++];
+        }
+        
+        for(int i=start;i<=end;i++){
+            number[i]=temp[i];
+        }
+    }
+}
+
+
+
