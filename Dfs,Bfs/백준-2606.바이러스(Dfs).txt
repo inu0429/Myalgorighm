@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+
+        Dfs dfs = new Dfs(n);
+        for(int i=0;i<m;i++){
+            int a= scanner.nextInt();
+            int b= scanner.nextInt();
+            dfs.add(a,b);
+        }
+        System.out.println(dfs.dfs(1));
+    }
+}
+
+
+class Dfs{
+    int[][] number;
+    boolean[] v;
+    int result=-1;
+    // 초기화
+    Dfs(int size){
+        number= new int[size+1][size+1];
+        v= new boolean[size+1];
+    }
+
+    // 경로 추가
+    void add(int a, int b){
+        number[a][b]=number[b][a]=1;
+    }
+
+    int dfs(int start){
+        v[start]=true;
+        result+=1;
+        for(int i=1;i<number[start].length;i++){
+            if(number[start][i]==1 && v[i]==false){
+                dfs(i);
+            }
+        }
+        return result;
+    }
+}
+
