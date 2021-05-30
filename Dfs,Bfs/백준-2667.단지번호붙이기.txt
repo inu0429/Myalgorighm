@@ -1,0 +1,79 @@
+import java.util.*;
+
+public class Main {
+    static Scanner scanner = new Scanner(System.in);
+    static int N = scanner.nextInt();
+    public static void main(String[] args) {
+        String[] point = new String[N];
+        Dfs dfs = new Dfs(N);
+        for(int i=0;i<N;i++){
+            point[i]= scanner.next();
+        }
+        dfs.Makehouse(point);
+
+        for(int i=0;i<N;i++){
+            for(int j=0;j<N;j++){
+                if(dfs.house[i][j]=='1' && !dfs.v[i][j]){
+                    dfs.apartnum++;
+                    dfs.dfs(i,j);
+                }
+            }
+        }
+        Arrays.sort(dfs.apart);
+        System.out.println(dfs.apartnum);
+
+        for(int i=0;i<dfs.apart.length;i++){
+            if(!(dfs.apart[i]==0)){
+                System.out.println(dfs.apart[i]);
+            }
+        }
+
+
+    }//main
+}
+
+
+class Dfs{
+    char[][] house;
+    boolean[][] v;
+    int apartnum;
+    int[] apart;
+    int[] dx={0,0,1,-1};
+    int[] dy={1,-1,0,0};
+
+    Dfs(int N){
+        house = new char[N][N];
+        v= new boolean[N][N];
+        apart = new int[25*25];
+        apartnum =0;
+    }
+
+    void Makehouse(String[] s){
+        for(int i=0;i<s.length;i++) {
+            String a=s[i];
+            for (int j = 0; j < a.length(); j++) {
+                char seo = a.charAt(j);
+                house[i][j] = seo;
+            }
+        }
+    }
+
+    void dfs(int a,int b){
+        v[a][b]=true;
+        apart[apartnum]++;
+
+        for(int i=0;i<4;i++){
+            int na=a+dx[i];
+            int nb=b+dy[i];
+
+            if(na>=0 && nb>=0 && na< Main.N && nb<Main.N){
+                if(house[na][nb]=='1' && !v[na][nb]){
+                    dfs(na,nb);
+                }
+            }
+        }
+    }
+}
+
+
+
