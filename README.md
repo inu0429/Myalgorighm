@@ -22,3 +22,7 @@ main함수 부분에서 최대한 전역최적해와 아주 근사한 값을 따
 
 -64에 가장 근사한 값이 두개 나왔습니다. 입력 x값이 int형이 아닌이상 정확한 전역최적해는 찾기 힘들어 보입니다.
 ![adad결과ㅓ](https://user-images.githubusercontent.com/80373000/121349940-06544d00-c965-11eb-9590-53de462443d3.JPG)
+
+
+fit 함수를 이용해서 , 다른 삼차원 사차원 함수에 맞게 입력값을 조절 할 수 있습니다.
+![adaddadaad](https://user-images.githubusercontent.com/80373000/121349928-048a8980-c965-11eb-97f4-9ebb2cc7d670.JPG)
