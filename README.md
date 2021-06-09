@@ -26,3 +26,11 @@ main함수 부분에서 최대한 전역최적해와 아주 근사한 값을 따
 
 fit 함수를 이용해서 , 다른 삼차원 사차원 함수에 맞게 입력값을 조절 할 수 있습니다.
 ![adaddadaad](https://user-images.githubusercontent.com/80373000/121349928-048a8980-c965-11eb-97f4-9ebb2cc7d670.JPG)
+
+
+4차함수로도 한번 짜봤습니다.
+![4차 함수](https://user-images.githubusercontent.com/80373000/121350956-37814d00-c966-11eb-8a76-0313d0ed0550.JPG)
+
+
+4차함수 결과 값은 한 30개 정도 나왔는데 그 중에서 전역최적해인 -1과 거의 유사한 값이 나온 것을 확인했습니다.
+![4차함수 결과](https://user-images.githubusercontent.com/80373000/121350951-36502000-c966-11eb-8aa5-985958b5495d.JPG)
